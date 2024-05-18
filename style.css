@@ -5,7 +5,7 @@
 }
 
 [class*="col-"], [class*="col_"], [class~="col"] {
-padding: 0rem 1rem;
+padding: 0rem 0rem;
 }
 
 /* 
@@ -17,6 +17,7 @@ white: #EEEEEE
 */
 body{
     font-family: "Podkova", serif;
+    background-color: #EEEEEE;
 }
 
 h1{ 
@@ -32,6 +33,10 @@ h4{
 p. a{
     font-family: "Nunito", sans-serif;;
     font-size: 1.2rem;
+}
+
+p{
+    margin: 1rem 0;
 }
 
 a{
@@ -52,6 +57,10 @@ a:hover{
     background-repeat: no repeat;
 }
 
+/* .bg-image-logo{
+    background-image: url(images/Logo_small.png);
+} */
+
 /* universal styles */
 
 .padded5{ padding: 5%;}
@@ -60,6 +69,7 @@ a:hover{
 .padded1rem{ padding: 1rem;}
 
 .padded-tb{ padding: 2rem 0;}
+.padded-lr{padding: 0 1rem;}
 
 .text-left {text-align: left;}
 .text-center {text-align: center;}
@@ -79,9 +89,90 @@ a:hover{
 .vh70 {min-height: 70vh;}
 .vh80 {min-height: 80vh;}
 
+.frame{ border: 2px solid #221E20;}
+
+/* quote styles */
+    .quote{
+        font-size: 1.6rem
+    }
+    .subtitle{
+        font-size: 1rem;
+    }
+    .quote-icon{
+        font-size: 3rem;
+    }
+
+/* video styles */
+    .embed-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+    }
+    
+    
+    .embed-container iframe,
+    .embed-container object,
+    .embed-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+/* styles for contact form */           
+.form2 input,
+.form2 textarea {
+  width: 100%;
+  margin: 0.6rem 0;
+  padding: 0.5rem;
+  border: 1px solid #221E20;
+  outline: none;
+  font-family: inherit;
+  color: #221E20;
+  font-size: 1.1rem;
+}
+
+.form2 input:focus,
+.form2 textarea:focus {
+  border-color: #221E20;
+}
+
+.form2 textarea {
+  min-height: 6rem;
+}
+
+.form2 label {
+  margin-top: 1.1rem;
+  display: block;
+  color: #221E20;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.form2 button {
+  background-color:  #e11d2a;
+  color: #EEEEEE;
+  border: none;
+  padding: 0.4rem 2rem;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  margin: 0.5rem;
+}
+
 hr { /* this is a line element */
     border: none;
     border-bottom: 2px solid;
     margin-bottom: 1rem;
     }
 
+.headerall{
+    background-color: #221E20;
+    color: #EEEEEE;
+}
+footer{
+    background-color: #221E20;
+    color: #EEEEEE;
+}
